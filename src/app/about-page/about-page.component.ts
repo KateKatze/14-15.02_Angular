@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutPageComponent implements OnInit {
 
+  title:string = '7Cloud Team'
+
   constructor() { }
 
   ngOnInit(): void {
