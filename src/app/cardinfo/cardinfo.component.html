@@ -1,32 +1,47 @@
-<div class="card-group p-3 g-3">
+<div class="container">
+    <div class="card-group p-3 g-3">
+        <div *ngFor="let car of cars" class="card border m-3">
+            <img [src]="car.img" class="card-img-top h-100" alt="Austria">
+            <div class="card-body">
+                <h5 class="card-title">{{ car.manufacturer }}</h5>
+                <p class="card-text">{{ car.text }}</p>
+            </div>
+            <div class="card-footer">
+                <p>{{ car.year }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="card-group p-3 g-3">
     <div class="card border m-3">
-        <img src="https://cdn.pixabay.com/photo/2018/08/16/08/39/hallstatt-3609863__480.jpg" class="card-img-top h-100" alt="Austria">
+        <img src="https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930__480.jpg" class="card-img-top h-100" alt="Austria">
         <div class="card-body">
-            <h5 class="card-title">Austria</h5>
-            <p class="card-text">Wonderful Austria is waiting for you.</p>
+            <h5 class="card-title">Ford</h5>
+            <p class="card-text">Car 1</p>
         </div>
         <div class="card-footer">
             <small class="text-muted">Special offer till Feb, 20</small>
         </div>
     </div>
     <div class="card border m-3">
-        <img src="https://cdn.pixabay.com/photo/2016/08/23/09/46/bojnice-1613939__340.jpg" class="card-img-top h-100" alt="Slovakia">
+        <img src="https://cdn.pixabay.com/photo/2021/01/21/11/09/tesla-5937063__340.jpg" class="card-img-top h-100" alt="Slovakia">
         <div class="card-body">
-            <h5 class="card-title">Slovakia</h5>
-            <p class="card-text">Enjoy Slovakia with 7Cloud.</p>
+            <h5 class="card-title">Tesla</h5>
+            <p class="card-text">Car 2</p>
         </div>
         <div class="card-footer">
             <small class="text-muted">Special offer till March, 1</small>
         </div>
     </div>
     <div class="card border m-3">
-        <img src="https://cdn.pixabay.com/photo/2013/04/11/19/46/building-102840__340.jpg" class="card-img-top h-100" alt="France">
+        <img src="https://cdn.pixabay.com/photo/2017/08/12/12/00/seat-leon-2634185__340.jpg" class="card-img-top h-100" alt="France">
         <div class="card-body">
-            <h5 class="card-title">France</h5>
-            <p class="card-text">Book an amazing weekend for two in Paris.</p>
+            <h5 class="card-title">Seat</h5>
+            <p class="card-text">Car 3</p>
         </div>
         <div class="card-footer">
             <small class="text-muted">Special offer till Feb, 14</small>
         </div>
     </div>
-</div>
+</div> -->
