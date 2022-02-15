@@ -1,36 +1,40 @@
 <div class="container mt-5">
-    <div class="row justify-content-center text-center mt-4">
-        <h1>{{ title }}</h1>
-
-        <div class="card col-lg-3 mt-5 me-5">
-            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/11/02/14/26/model-2911329__340.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Daniel Chang</h5>
-                <p class="card-text">CEO</p>
-            </div>
-        </div>
-        <div class="card col-lg-3 mt-5 me-5">
-            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2019/12/17/17/09/woman-4702060__340.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Mila Braun</h5>
-                <p class="card-text">Manager</p>
-            </div>
-        </div>
-        <div class="card col-lg-3 mt-5">
-            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2018/07/25/08/58/business-3560916__340.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Karina Black</h5>
-                <p class="card-text">Client service</p>
-            </div>
-        </div>
+    <div class="row justify-content-center text-start mt-4">
+        <h3 class="mb-3">Car Rental Form</h3>
+        <form formGroup="info" (ngSubmit)="onSubmit()">
+            <label>
+            Car model:
+            <input type="text" formControlName="model">
+        </label>
+            <br>
+            <br>
+            <label>
+            Amount of days (rent):
+            <input type="text" formControlName="rent">
+        </label>
+            <br>
+            <br>
+            <label>
+            First Name:
+            <input type="text" formControlName="fname">
+        </label>
+            <br>
+            <br>
+            <label>
+            Last Name:
+            <input type="text" formControlName="lname">
+        </label>
+            <br>
+            <br>
+            <label>
+            Mobile Number:
+            <input type="text" formControlName="number">
+        </label>
+            <br>
+            <br>
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
     </div>
-
-    <div class="row mt-5">
-        <h3 class="text-center mb-5">Our company</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta a, architecto earum, iste illum magnam nulla qui, non delectus ea exercitationem. Quasi quos error, consectetur laboriosam autem magnam dolores. Ducimus quam, voluptatem reprehenderit,
-            culpa dolor nulla ad aliquid facilis enim quisquam vitae quod modi iusto quos nihil. Eos numquam doloribus explicabo similique ea sequi ex soluta distinctio magni facere. Corrupti amet laudantium repellendus officia necessitatibus reiciendis
-            veniam esse, ducimus dolor velit eum a doloremque iure quaerat minima debitis neque repudiandae? Iusto quia a quod molestiae recusandae ipsam expedita dolores? Placeat consectetur officia perspiciatis error nisi, est corrupti aperiam! Temporibus
-            unde quia cum rem quos minima fuga culpa optio quis tempora blanditiis ea officiis deserunt aliquam nihil consequuntur, iste error. Perspiciatis voluptatibus consequuntur sit aperiam reprehenderit obcaecati numquam itaque, aut culpa dignissimos
-            illum tempore a placeat voluptates impedit rerum, molestias odio. Impedit ea molestias, debitis culpa et minima nam magnam?</p>
+    <div id="answers" class="row">
     </div>
 </div>
