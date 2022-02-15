@@ -10,6 +10,7 @@ import { CardinfoComponent } from './cardinfo/cardinfo.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { HomeComponent } from './home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

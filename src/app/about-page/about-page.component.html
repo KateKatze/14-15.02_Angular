@@ -1,19 +1,7 @@
 <div class="container mt-5">
     <div class="row justify-content-center text-start mt-4">
         <h3 class="mb-3">Car Rental Form</h3>
-        <form formGroup="info" (ngSubmit)="onSubmit()">
-            <label>
-            Car model:
-            <input type="text" formControlName="model">
-        </label>
-            <br>
-            <br>
-            <label>
-            Amount of days (rent):
-            <input type="text" formControlName="rent">
-        </label>
-            <br>
-            <br>
+        <form [formGroup]="info" (ngSubmit)="onSubmit()">
             <label>
             First Name:
             <input type="text" formControlName="fname">
@@ -28,7 +16,19 @@
             <br>
             <label>
             Mobile Number:
-            <input type="text" formControlName="number">
+            <input type="text" formControlName="mnumber">
+        </label>
+            <br>
+            <br>
+            <label>
+            E-Mail Address:
+            <input type="text" formControlName="email">
+        </label>
+            <br>
+            <br>
+            <label>
+            Message:
+            <input type="text" formControlName="msg">
         </label>
             <br>
             <br>
@@ -36,5 +36,8 @@
         </form>
     </div>
     <div id="answers" class="row">
+    </div>
+    <div *ngIf="valid">
+        the form is valid
     </div>
 </div>
